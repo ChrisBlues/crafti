@@ -29,24 +29,6 @@ const toggleNav = function () {
 addEventOnElements(navTogglers, "click", toggleNav);
 
 
-
-/**
- * active header when window scroll down to 100px
- */
-
-const header = document.querySelector("[data-header]");
-
-const headerActive = function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
-  }
-}
-
-window.addEventListener("scroll", headerActive);
-
-
 // Détection du bas de page pour les remerciements au concepteur
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY + window.innerHeight;
